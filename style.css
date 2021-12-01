@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: tahoma;
+    background-color: #404040;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .headline{
+    text-align: center;
+    background-color: #0066ff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+.container .headline:hover{
+    transform: scale(1.1);
+}
+.container .headline h2{
+    color: white;
+}
+.calculator-box{
+    width: 500px;
+    height: 300px;
+    background-color: #595959;
+    color: white;
+    font-weight: bold;
+}
+.calculator-box .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+.calculator-box .content .inputs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.calculator-box .content .inputs .err{
+    color: tomato;
+    font-size: 12px;
+    display: none;
+    font-style: italic;
+}
+.calculator-box .content .result{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator-box .content .result .tip-per-person{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 24px;
+}
+.calculator-box .content .result .total{
+    text-align: center;
+    line-height: 23px;
+}
+.calculator-box .content .inputs> div{
+    margin-top: 15px;
+}
+.calculator-box .content .inputs> div >input{
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+.calculator-box .content .result .tip-per-person h4, .calculator-box .content .result .total h4{
+    color: aqua;
+}
+.text-small{
+    font-size: 14px;
+}
